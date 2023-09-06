@@ -19,14 +19,24 @@ Accédez au repository GITHUB https://github.com/EnjoyDevOps/Projet_fil_rouge_OL
 
 ## Construction des images Docker
 
+L'application est composée des images Docker suivantes :
+
+- **react-client** : Image de l'interface utilisateur construite avec React. **cd ~/Projet_fil_rouge_OLTE/client/**
+- **react-posts** : Service pour la gestion des posts.
+- **react-comments** : Service pour la gestion des commentaires.
+- **react-query** : Service pour la gestion des requêtes.
+- **react-moderation** : Service pour la modération des commentaires.
+- **react-event-bus** : Service pour la gestion des événements entre les services.
 créer le fichier dockerfile suivant :
 ```
 ##################################################################
-#                        IMAGE DOCKER                            #
-#              basé sur l'image node:alpine                      #
-#              avec installation des dépendances                 #
+#           IMAGE DOCKER  basé sur l'image node:alpine           #
+#                 Pour construire l'image docker                 #
 #  - Ouvrir une fenêtre Terminal                                 #
-#  - saisir : " docker image build -t react-client . "           #
+#  Se rendre sur le répertoire de l'image à construire           #
+#  exemple saisir : " cd ~/Projet_fil_rouge_OLTE/client/"        #
+#  Construire l'image docker avec la commande:                   #
+#  exemple saisir : " docker image build -t react-client . "     #
 ##################################################################
 FROM node:alpine
 COPY . .
@@ -34,14 +44,7 @@ RUN npm install
 CMD ["npm", "start"]
 ```
 
-L'application est composée des services suivants :
 
-- **Client** : Interface utilisateur construite avec React.
-- **Posts** : Service pour la gestion des posts.
-- **Comments** : Service pour la gestion des commentaires.
-- **Query** : Service pour la gestion des requêtes.
-- **Moderation** : Service pour la modération des commentaires.
-- **Event Bus** : Service pour la gestion des événements entre les services.
 
 ### Chemins d'Ingress
 
