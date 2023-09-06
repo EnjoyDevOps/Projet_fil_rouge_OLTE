@@ -9,7 +9,7 @@ Accédez au repository GITHUB https://github.com/EnjoyDevOps/Projet_fil_rouge_OL
 
 - [Introduction](#introduction)
 - [Table des matières](#table-des-matières)
-- [Architecture](#architecture)
+- [Construction des images Docker](#architecture)
 - [Chemins d'Ingress](#chemins-dingress)
 - [Noms de Services Kubernetes](#noms-de-services-kubernetes)
 - [Ports des Services](#ports-des-services)
@@ -17,7 +17,20 @@ Accédez au repository GITHUB https://github.com/EnjoyDevOps/Projet_fil_rouge_OL
 - [Installation](#installation)
 - [Déploiement](#déploiement)
 
-## Architecture
+## Construction des images Docker
+
+créer le fichier dockerfile suivant :
+##################################################################
+#                        IMAGE DOCKER                            #
+#              basé sur l'image node:alpine                      #
+#              avec installation des dépendances                 #
+#  - Ouvrir une fenêtre Terminal                                 #
+#  - saisir : " docker image build -t react-client . "           #
+##################################################################
+FROM node:alpine
+COPY . .
+RUN npm install
+CMD ["npm", "start"]
 
 L'application est composée des services suivants :
 
