@@ -27,8 +27,8 @@ créer le fichier dockerfile suivant :
 `#  - Ouvrir une fenêtre Terminal                                 #`
 `#  - saisir : " docker image build -t react-client . "           #`
 `##################################################################`
-FROM node:alpine
-COPY . .
+`FROM node:alpine`
+`COPY . .`
 RUN npm install
 CMD ["npm", "start"]`
 
