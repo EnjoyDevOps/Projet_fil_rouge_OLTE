@@ -21,13 +21,26 @@ Accédez au repository GITHUB https://github.com/EnjoyDevOps/Projet_fil_rouge_OL
 
 L'application est composée des images Docker suivantes :
 
-- **react-client** : Image de l'interface utilisateur construite avec React. **cd ~/Projet_fil_rouge_OLTE/client/**
+- **react-client** : Image de l'interface utilisateur construite avec React. 
+  **cd ~/Projet_fil_rouge_OLTE/client/**
 - **react-posts** : Service pour la gestion des posts.
+  **cd ~/Projet_fil_rouge_OLTE/posts/**
 - **react-comments** : Service pour la gestion des commentaires.
+  **cd ~/Projet_fil_rouge_OLTE/comments/**
 - **react-query** : Service pour la gestion des requêtes.
+  **cd ~/Projet_fil_rouge_OLTE/query/**
 - **react-moderation** : Service pour la modération des commentaires.
+  **cd ~/Projet_fil_rouge_OLTE/moderation/**
 - **react-event-bus** : Service pour la gestion des événements entre les services.
-créer le fichier dockerfile suivant :
+  **cd ~/Projet_fil_rouge_OLTE/client/**
+
+| Les Tableaux           | Sont            | Cools    |
+| -------------          |:-------------:  | -----:  |
+| col 3 est              | alignée à droite| $1600    |
+| col 2 est              | centrée         |  $12     |
+| les rayures de zèbres  | sont géniales   |  $1    |
+
+Créer le fichier dockerfile suivant :
 ```
 ##################################################################
 #           IMAGE DOCKER  basé sur l'image node:alpine           #
