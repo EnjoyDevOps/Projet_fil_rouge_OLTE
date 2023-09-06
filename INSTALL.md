@@ -20,7 +20,7 @@ Accédez au repository GITHUB https://github.com/EnjoyDevOps/Projet_fil_rouge_OL
 ## Construction des images Docker
 
 créer le fichier dockerfile suivant :
-##################################################################
+`##################################################################
 #                        IMAGE DOCKER                            #
 #              basé sur l'image node:alpine                      #
 #              avec installation des dépendances                 #
@@ -30,7 +30,7 @@ créer le fichier dockerfile suivant :
 FROM node:alpine
 COPY . .
 RUN npm install
-CMD ["npm", "start"]
+CMD ["npm", "start"]`
 
 L'application est composée des services suivants :
 
