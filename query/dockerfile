@@ -1,0 +1,9 @@
+##################################################################
+#                      IMAGE DOCKER Query                        #
+# basé sur l'image node:alpine avec installation des dépendances #
+#           " docker image build -t react-query . "              #
+##################################################################
+FROM node:alpine
+COPY . .
+RUN npm install
+CMD ["npm", "start"]
