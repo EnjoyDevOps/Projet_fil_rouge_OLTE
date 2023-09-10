@@ -1,0 +1,9 @@
+##################################################################
+#                        IMAGE DOCKER Client                            #
+# basé sur l'image node:alpine avec installation des dépendances #
+#           " docker image build -t react-client . "             #
+##################################################################
+FROM node:alpine
+COPY . .
+RUN npm install
+CMD ["npm", "start"]
