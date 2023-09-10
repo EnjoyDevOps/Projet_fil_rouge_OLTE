@@ -1,0 +1,9 @@
+##################################################################
+#                      IMAGE DOCKER Event-bus                    #
+# basé sur l'image node:alpine avec installation des dépendances #
+#        " docker image build -t react-event_bus . "             #
+##################################################################
+FROM node:alpine
+COPY . .
+RUN npm install
+CMD ["npm", "start"]
