@@ -1,5 +1,5 @@
 #!/bin/bash
-# Changer le shebanng! selon votre shell
+# Changer le shebang! selon votre shell
 # 
 # Assurez-vous que le fichier est executable sous votre shell
 # Executer : chmod 700 BuildDockerImages.sh

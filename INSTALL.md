@@ -34,11 +34,6 @@ L'application est composée des images Docker suivantes :
 - **react-event-bus** : Service pour la gestion des événements entre les services.
   **cd ~/Projet_fil_rouge_OLTE/client/**
 
-| Les Tableaux           | Sont            | Cools    |
-| -------------          |:-------------:  | -----:  |
-| col 3 est              | alignée à droite| $1600    |
-| col 2 est              | centrée         |  $12     |
-| les rayures de zèbres  | sont géniales   |  $1    |
 
 Créer le fichier dockerfile suivant :
 ```
